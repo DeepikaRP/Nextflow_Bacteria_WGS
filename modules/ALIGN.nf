@@ -20,7 +20,7 @@ process ALIGN {
 	samtools view -b ${sample_id}.sam > ${sample_id}.bam 
 	samtools sort ${sample_id}.bam -o ${sample_id}_sorted.bam
 	samtools index ${sample_id}_sorted.bam
-	samtools flagstat ${sample_id}.bam
-	samtools flagstat ${sample_id}.bam > ${sample_id}_flagstat.txt
+	samtools flagstat ${sample_id}_sorted.bam > ${sample_id}_flagstat.txt
+	samtools stats ${sample_id}_sorted.bam > ${sample_id}_bam_stat.txt
 	"""
 }
