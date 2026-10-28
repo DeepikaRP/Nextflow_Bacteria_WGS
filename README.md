@@ -27,7 +27,7 @@ The goal is to improve workflow reproducibility, process management, and scalabi
 │   ├── FASTQC.nf
 │   ├── FASTP.nf
 │   └── REF_INDEX.nf
-├── data/           # Input data; not committed to GitHub
+├── data/           
 ├── results/        # Generated outputs; not committed to GitHub
 └── README.md
 ```
